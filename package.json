@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test:stress": "artillery run --output report.json ./cluster-stress.yaml",
+    "report": "artillery report ./report.json"
+  },
+  "dependencies": {
+    "artillery": "^2.0.0-27"
+  }
 }
